@@ -120,3 +120,40 @@ p:hover{
 p:hover::before{
     transform: skewX(45deg) translateX(-150px);
 }
+
+
+@media screen and (max-width: 768px) {
+    .color:nth-child(2) {
+        bottom: -6vh;
+        left: 5vw;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .color:nth-child(3) {
+        bottom: -6vh;
+        right: 0;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    ul {
+        gap: 5vw;
+    }
+
+    li {
+        margin-right: 5vw; 
+    }
+
+    p {
+        width: 20vw;
+        height: 20vw;
+        font-size: 8vw;
+        border-radius: 4vw;
+    }
+
+    p::before {
+        width: 5vw;
+        transform: skewX(60deg) translateX(17.5vw);
+    }
+}
