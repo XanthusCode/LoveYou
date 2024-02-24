@@ -69,7 +69,7 @@ li{
     -webkit-tap-highlight-color: transparent;
 }
 
-a{
+p{
     z-index: 2;
     position: relative;
     top: 0;
@@ -94,7 +94,7 @@ a{
     transition-delay: 0.5s 0.5s 0s;
 }
 
-a::before{
+p::before{
     content: '';
     width: 50px;
     height: 100%;
@@ -106,17 +106,17 @@ a::before{
     transition: 0.5s;
 }
 
-a{
+p{
     z-index: 1;
 }
 
-a:hover{
+p:hover{
     z-index: 3;
     top: -50px;
     transition-delay: 0s, 0.5s, 0.5s;
     transform: translateY(50px);
 }
 
-a:hover::before{
+p:hover::before{
     transform: skewX(45deg) translateX(-150px);
 }
